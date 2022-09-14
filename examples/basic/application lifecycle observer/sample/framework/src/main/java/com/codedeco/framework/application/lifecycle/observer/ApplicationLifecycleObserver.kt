@@ -1,0 +1,3 @@
+package com.codedeco.framework.application.lifecycle.observer
+
+interface ApplicationLifecycleObserver

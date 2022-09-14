@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Application Lifecycle Observer Sample"
+include ':app'
+include ':feature-logger'
+include ':feature-crashlytics'
+include ':feature-environment'
+include ':framework'
+include ':feature-main'

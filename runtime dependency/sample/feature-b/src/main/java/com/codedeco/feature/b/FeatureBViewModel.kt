@@ -3,7 +3,8 @@ package com.codedeco.feature.b
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import com.codedeco.share.serviceprovider.FeatureAServiceProvider
-import com.codedeco.share.serviceprovider.ServiceProviderFactory
+import com.codedeco.share.serviceprovider.NullServiceProvider
+import com.codedeco.share.serviceprovider.factory.ServiceProviderFactory
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
@@ -15,5 +16,10 @@ class FeatureBViewModel @Inject constructor(
     fun onAction() {
         serviceProviderFactory.get(FeatureAServiceProvider::class.java)
             ?.provideAService()
+    }
+
+    fun onAnotherAction() {
+        // This line will make the app crash since we should not access NullServiceProvider
+        serviceProviderFactory.get(NullServiceProvider::class.java)
     }
 }

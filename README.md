@@ -686,6 +686,14 @@ fun onAction() {
 
 3. That's it!
 
+**Precaution**
+
+If only `Factory` class is created, but not the `Module` class that bind the key, value instance. When you try to compile the project. you may get compile error with following message
+
+> error: [Dagger/MissingBinding] java.util.map<java.lang.Class<? extends XXX>, javax.inject.Provider> cannot be provided without an @Provides-annotated method
+
+To avoid this error, you need to create a set of default / null classes for the injection.
+
 **Sample project**
 
 [Runtime weak reference dependency](./runtime%20dependency/sample/)

@@ -1,6 +1,7 @@
-package com.codedeco.share.serviceprovider
+package com.codedeco.share.serviceprovider.factory
 
 import android.util.Log
+import com.codedeco.share.serviceprovider.ServiceProvider
 import javax.inject.Inject
 import javax.inject.Provider
 

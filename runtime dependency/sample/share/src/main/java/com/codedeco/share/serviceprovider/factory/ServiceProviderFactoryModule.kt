@@ -1,4 +1,4 @@
-package com.codedeco.share.serviceprovider
+package com.codedeco.share.serviceprovider.factory
 
 import dagger.Binds
 import dagger.Module

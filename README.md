@@ -702,21 +702,21 @@ To avoid this error, you need to create a set of default / null classes for the 
 
 Basic usage
 
-- [Application lifecycle observer](./example/basic/application%20lifecycle%20observer)
+- [Application lifecycle observer](./examples/basic/application%20lifecycle%20observer)
 
-- [Broadcast Sender](./example/basic/broadcast%sender)
+- [Broadcast Sender](./examples/basic/broadcast%sender)
 
 Intermediate usage
 
-- [Navigation](./example/intermdiate/navigation/) 🔥
+- [Navigation](./examples/intermdiate/navigation/) 🔥
 
-- [Javascript Interface](./example/intermediate/javascript%20interface)
+- [Javascript Interface](./examples/intermediate/javascript%20interface)
 
 Advanced usage
 
-- [Broadcast Receiver](./example/advanced/broadcast%20receiver)
+- [Broadcast Receiver](./examples/advanced/broadcast%20receiver)
 
-- [Popup Menu](./example/advanced/popup%20menu)
+- [Popup Menu](./examples/advanced/popup%20menu)
 
 # References
 
@@ -784,6 +784,6 @@ Advanced usage
     
     - [Access service provider](#access-service-provider)
 
-- [Examples](#example)
+- [Examples](#examples)
 
 - [References](#reference)

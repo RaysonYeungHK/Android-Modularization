@@ -7,10 +7,12 @@ import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import dagger.multibindings.IntoMap
+import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
 interface CrashlyticsApplicationLifecycleObserverModule {
+    @Singleton
     @Binds
     @IntoMap
     @ApplicationLifecycleObserverKey(CrashlyticsApplicationLifecycleEventObserver::class)

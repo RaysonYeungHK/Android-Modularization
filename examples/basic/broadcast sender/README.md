@@ -35,7 +35,7 @@ broadcastSenderFactory.get(SomeFeatureBroadcastSender::class.java)
 
 The decision of using broadcast / local broadcast could be also handled from the feature it self. It is mentioned in the sample project.
 
-- It is recommended to implement [broadcast receiver](../advanced/broadcast%20receiver) together with [broadcast sender](.) as pair.
+- It is recommended to implement [broadcast receiver](../../advanced/broadcast%20receiver) together with [broadcast sender](.) as pair.
 
 **Sample project**
 

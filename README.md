@@ -704,19 +704,19 @@ Basic usage
 
 - [Application lifecycle observer](./examples/basic/application%20lifecycle%20observer)
 
-- [Broadcast Sender](./examples/basic/broadcast%sender)
+- [Broadcast sender](./examples/basic/broadcast%20sender)
 
 Intermediate usage
 
 - [Navigation](./examples/intermdiate/navigation/) 🔥
 
-- [Javascript Interface](./examples/intermediate/javascript%20interface)
+- [Javascript interface](./examples/intermediate/javascript%20interface)
 
 Advanced usage
 
-- [Broadcast Receiver](./examples/advanced/broadcast%20receiver)
+- [Broadcast receiver](./examples/advanced/broadcast%20receiver)
 
-- [Popup Menu](./examples/advanced/popup%20menu)
+- [Popup menu](./examples/advanced/popup%20menu)
 
 # References
 

@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Navigation Sample"
+include ':app'
+include ':feature-main'
+include ':framework'
+include ':feature-splash'
+include ':feature-sub-fragment'
+include ':feature-activity-result-sample'
+include ':feature-viewpager-sample'

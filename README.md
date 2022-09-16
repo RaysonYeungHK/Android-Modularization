@@ -706,11 +706,11 @@ Basic usage
 
 - [Broadcast sender](./examples/basic/broadcast%20sender)
 
+- [Javascript interface](./examples/basic/javascript%20interface)
+
 Intermediate usage
 
-- [Navigation](./examples/intermdiate/navigation/) 🔥
-
-- [Javascript interface](./examples/intermediate/javascript%20interface)
+- [Navigation](./examples/intermediate/navigation/) 🔥
 
 Advanced usage
 

@@ -1,5 +1,67 @@
 # Android Modularization
 
+## Table of Contents
+
+- [Overview](#overview)
+
+- [Preparation](#preparation)
+
+- [Modularization strategy](#modularization-strategy)
+  
+  - [Layer based solution](#layer-based-solution)
+  
+  - [Feature based solution](#feature-based-solution)
+  
+  - [Hybrid solution](#hybrid-solution)
+  
+  - [Summary and comparison](#summary-and-comparison)
+
+- [Module management](#module-management)
+  
+  - [Resources management](#resources-management)
+  
+  - [AndroidManifest.xml](#androidmanifestxml)
+  
+  - [proguard-rules.pro](#proguard-rulespro)
+  
+  - [Code base - Multiple times definition](#code-base---multiple-times-definition)
+  
+  - [Code base - No such method error](#code-base---no-such-method-error)
+  
+  - [Recommendation](#recommendation)
+
+- [Communication between features](#communication-between-features)
+  
+  - [Dependency injection](#dependency-injection)
+    
+    - [Implementation injection](#implementation-injection)
+    
+    - [Interface injection](#interface-injection)
+    
+    - [Provider injection](#provider-injection)
+  
+  - [Cyclic dependency](#cyclic-dependency)
+
+- [Compile time strong dependency vs Runtime weak dependency](#compile-time-strong-dependency-vs-runtime-weak-dependency)
+  
+  - [Convert to runtime weak dependency](#convert-to-runtime-weak-dependency)
+    
+    - [Create backbone](#create-backbone)
+    
+    - [Create feature service provider](#create-feature-service-provider)
+    
+    - [Access service provider](#access-service-provider)
+
+- [Examples](#examples)
+  
+  - [Basic usage](./#basic-usage)
+  
+  - [Intermediate usage](./#intermediate-usage)
+  
+  - [Advanced usage](./#advanced-usage)
+
+- [References](#reference)
+
 ### Overview
 
 In an ever-growing codebase, scalability, readability, and overall code quality often decrease through time. This comes as a result of the codebase increasing in size without its maintainers taking active measures to enforce a structure that is easily maintainable.
@@ -700,7 +762,7 @@ To avoid this error, you need to create a set of default / null classes for the 
 
 # Examples
 
-Basic usage
+## Basic usage
 
 - [Application lifecycle observer](./examples/basic/application%20lifecycle%20observer)
 
@@ -708,11 +770,11 @@ Basic usage
 
 - [Javascript interface](./examples/basic/javascript%20interface)
 
-Intermediate usage
+## Intermediate usage
 
 - [Navigation](./examples/intermediate/navigation/) 🔥
 
-Advanced usage
+## Advanced usage
 
 - [Broadcast receiver](./examples/advanced/broadcast%20receiver)
 
@@ -731,59 +793,3 @@ Advanced usage
 [Android Developers - Android Studio - User guide - Resource merging](https://developer.android.com/studio/write/add-resources#resource_merging)
 
 [Android Resources Naming Convention | XToolkit.WhiteLabel](https://softeq.github.io/XToolkit.WhiteLabel/articles/practices/android-res-naming.html)
-
-# Index
-
-- [Overview](#overview)
-
-- [Preparation](#preparation)
-
-- [Modularization strategy](#modularization-strategy)
-  
-  - [Layer based solution](#layer-based-solution)
-  
-  - [Feature based solution](#feature-based-solution)
-  
-  - [Hybrid solution](#hybrid-solution)
-  
-  - [Summary and comparison](#summary-and-comparison)
-
-- [Module management](#module-management)
-  
-  - [Resources management](#resources-management)
-  
-  - [AndroidManifest.xml](#androidmanifestxml)
-  
-  - [proguard-rules.pro](#proguard-rulespro)
-  
-  - [Code base - Multiple times definition](#code-base---multiple-times-definition)
-  
-  - [Code base - No such method error](#code-base---no-such-method-error)
-  
-  - [Recommendation](#recommendation)
-
-- [Communication between features](#communication-between-features)
-  
-  - [Dependency injection](#dependency-injection)
-    
-    - [Implementation injection](#implementation-injection)
-    
-    - [Interface injection](#interface-injection)
-    
-    - [Provider injection](#provider-injection)
-  
-  - [Cyclic dependency](#cyclic-dependency)
-
-- [Compile time strong dependency vs Runtime weak dependency](#compile-time-strong-dependency-vs-runtime-weak-dependency)
-  
-  - [Convert to runtime weak dependency](#convert-to-runtime-weak-dependency)
-    
-    - [Create backbone](#create-backbone)
-    
-    - [Create feature service provider](#create-feature-service-provider)
-    
-    - [Access service provider](#access-service-provider)
-
-- [Examples](#examples)
-
-- [References](#reference)
